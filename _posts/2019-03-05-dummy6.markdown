@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Dummy Post 6"
+title:  첫 블로그 Postring Test"
 date:   2019-03-05 23:25:00
-author: Ben Centra
+author: Kim Yongjun
 categories: Dummy
 tags: lorem ipsum
 ---
