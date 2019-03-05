@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Dummy Post 6"
+date:   2019-03-05 23:25:00
+author: Ben Centra
+categories: Dummy
+tags: lorem ipsum
+---
+
+## 첫 블로그 Postring Test
+** 아직 이것저것 해봐야 알 것 같다.
+'_alt('일단 따라해 보자!)'
