@@ -6,6 +6,12 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/KimYongjun.jpg" title="Profile Picture" class="profile">
 
+## 개인개발 내역
+
+현재는 **HTML5-CSS3,Javascript, GitHub blog**을 공부하면서 **[GitHub](https://github.com/KimYongjun413).**에 기록 중입니다.
+
+## 프로젝트 내역
+
 #### ITO 프로젝트
 - 기간 : 2018.1월 ~ 현재
 - 역활 : ERP일반,물류 모듈 개선, 출력물 개발(OZ Report)
@@ -36,9 +42,6 @@ permalink: /about/
 - 역할 : ERP물류 모듈 개발
 - SPEC : C#, .Net Framework 3.5, MSSQL(SSMS 2014)
 - 성과 : 프로젝트 기간 내 성공적으로 완료 및 회사 내 프로젝트 상 수여.
-
-
-현재는 **HTML5-CSS3,Javascript, GitHub blog**을 공부하면서 **[GitHub](https://github.com/KimYongjun413).**에 기록 중입니다.
 
 [centrarium]: https://github.com/bencentra/centrarium
 [bencentra]: http://bencentra.com
