@@ -38,7 +38,7 @@ permalink: /about/
 - 성과 : 프로젝트 기간 내 성공적으로 완료 및 회사 내 프로젝트 상 수여.
 
 
-현재는 HTML5-CSS3, Javascript, GitHub blog을 공부하면서 [GitHub repository](https://github.com/KimYongjun413).에 기록 중입니다.
+현재는 **HTML5-CSS3,Javascript, GitHub blog**을 공부하면서 **[GitHub](https://github.com/KimYongjun413).**에 기록 중입니다.
 
 [centrarium]: https://github.com/bencentra/centrarium
 [bencentra]: http://bencentra.com
