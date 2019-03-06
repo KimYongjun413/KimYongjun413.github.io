@@ -7,7 +7,7 @@ categories: Dummy
 tags: lorem ipsum
 ---
 
-<img width="300" src="http://image.yes24.com/momo/TopCate935/MidCate008/93474058.jpg" alt="자바 웹 프로그래밍 Next Step" title="자바 웹 프로그래밍 Next Step">
+<img width="150" src="http://image.yes24.com/momo/TopCate935/MidCate008/93474058.jpg" alt="자바 웹 프로그래밍 Next Step" title="자바 웹 프로그래밍 Next Step">
 
 이 책을 통해 학습순서를 구성할 수 있게 되었다.
 1. html-css 
