@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  계산기 만들기
+title:  [C#]계산기 만들기
 date:   2019-03-07 23:58:00
 author: Kim Yongjun
 categories: Dummy
