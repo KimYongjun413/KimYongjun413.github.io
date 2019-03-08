@@ -3,8 +3,8 @@ layout: post
 title:  자바 웹 프로그래밍 Next Step
 date:   2019-03-06 23:17:00
 author: Kim Yongjun
-categories: Dummy
-tags: lorem ipsum
+categories: Java
+tags: Java
 ---
 
 <img width="50" src="http://image.yes24.com/momo/TopCate935/MidCate008/93474058.jpg" alt="자바 웹 프로그래밍 Next Step" title="자바 웹 프로그래밍 Next Step">

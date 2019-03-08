@@ -3,7 +3,7 @@ layout: post
 title:  첫 블로그 Postring Test
 date:   2019-03-05 23:25:00
 author: Kim Yongjun
-categories: Dummy
+categories: Daily ife
 tags: lorem ipsum
 ---
 
