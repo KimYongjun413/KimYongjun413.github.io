@@ -23,7 +23,7 @@ IDE는 visual studio 2008를 사용하였습니다.
 대상 프레임워크는 .NET Framework 3.5 이고 Windows Form을 사용하여 개발했습니다.
 <br><br>
 
-# 선행과정
+<h1> 선행과정 </h1>
 <hr style="height:0px">
 
 
@@ -55,7 +55,7 @@ IDE는 visual studio 2008를 사용하였습니다.
 - [괄호없는 다항 4칙연산 계산기] Calculator_C# 폴더에 있습니다.<br>
 https://github.com/KimYongjun413/DalLab-Mentoring.git
 
-# 개발과정
+<h1> 개발과정 </h1>
 <hr style="height:0px">
 
 ## 문제발생
@@ -136,29 +136,29 @@ if (formulaList.Count != 0 && oprList.Count < formulaList.Count)
 ```
 
 
-# 느낀점
+<h1> 느낀점 </h1>
 <hr style="height:0px">
 - 낯설음을 느꼈습니다.
 C#, .Net Framework3.5 기본으로 그동안 개발을 해왔지만, 특정 외산 프레임워크에 익숙한 저 였습니다.
 익숙함을 벗어나 무언가를 개발해본게 오랜만이라 상당히 낯설었습니다.
 - 그럼에도 만들어보고자 하는 방향대로 만들 수 있어 다행이라고 생각했습니다.
 
-# 배운점
+<h1> 배운점 </h1>
 <hr style="height:0px">
 - 낯설게 개발할 때 제가 깊게 몰입하여 집중하는 것을 느꼈습니다.
 - 개발에 대한 재미를 더욱 더 깊게 느꼈습니다. 이래서 다들 토이프로젝트를 하는가 봅니다.
 - 유저컨트롤을 만드는 법을 이번에 알았습니다. 일 할 때 써먹어도 좋을 것 같습니다.
 
-# 앞으로의 계획
+<h1> 앞으로의 계획
 <hr style="height:0px">
 - 괄호를 입력가능하게 하여 "괄호있는 다항 4칙연산 계산기"를 만들어 볼 계획입니다.
 - 연사자를 두번이상 연속으로 입력 불가능 하도록 개선해야 합니다.
 
-# 피드백
+<h1> 피드백 </h1>
 <hr style="height:0px">
 1. 피드백을 받으면 여기에 올리도록 하겠습니다.
 
-# 참고자료
+<h1> 참고자료 </h1>
 <hr style="height:0px">
 [C# TextBox 사이즈 변경] https://www.dazzii.com/c-textbox-%EC%82%AC%EC%9D%B4%EC%A6%88-%EB%B3%80%EA%B2%BD/
 
