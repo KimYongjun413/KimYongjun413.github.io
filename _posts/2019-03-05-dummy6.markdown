@@ -4,7 +4,7 @@ title:  첫 블로그 Postring Test
 date:   2019-03-05 23:25:00
 author: Kim Yongjun
 categories: Daily
-tags: lorem ipsum
+tags: Daily
 ---
 
 ## 첫 블로그 Postring Test
