@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  (HTML) 괄호없는 다항 사칙연산 계산기
+title:  (Javascript) 괄호없는 다항 사칙연산 계산기
 date:   2019-03-11 11:35:00
 author: Kim Yongjun
 categories: Javascript
