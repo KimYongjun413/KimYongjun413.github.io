@@ -155,7 +155,7 @@ C#, .Net Framework3.5 기본으로 그동안 개발을 해왔지만, 특정 외�
 <h1 style="margin:0px;"> 앞으로의 계획 </h1>
 <hr style="height:1px; margin:0px;">
 - 괄호를 입력가능하게 하여 "괄호있는 다항 4칙연산 계산기"를 만들어 볼 계획입니다.
-- 연사자를 두번이상 연속으로 입력 불가능 하도록 개선해야 합니다.
+- 연산자를 두번이상 연속으로 입력 불가능 하도록 개선해야 합니다.
 
 <h1 style="margin:0px;"> 피드백 </h1>
 <hr style="height:1px; margin:0px;">
