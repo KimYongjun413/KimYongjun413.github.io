@@ -115,7 +115,7 @@ for (int n = 0; n < strNumber.Length; n++)
     numlist.Add(Convert.ToDecimal(strNumber[n]));
 }                       
 
-#region 숫자와 연산자가 중위표기법 순으로 담겨있습니다.
+//숫자와 연산자가 중위표기법 순으로 담겨있습니다.
 for (int i = 0; i < numlist.Count; i++)
 {
     formulaList.Add(numlist[i].ToString());
