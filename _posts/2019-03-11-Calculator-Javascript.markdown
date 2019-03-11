@@ -18,7 +18,7 @@ tags: Javascript
 (공학용 계산로 하면 물론 사칙연산 우선순위에 맞게 계산이 됩니다.)
 
 
-C#에 이어 HTML-CSS, Javascript로 계산기를 만들어 봤습니다.
+C#에 이어 HTML-CSS, Javascript로 계산기를 만들어 봤습니다.  
 IDE는 visual studio code를 사용하였습니다.
 <br><br>
 
@@ -118,8 +118,8 @@ function calculate() {
 
 <h1 style="margin:0px;"> 참고자료 </h1>
 <hr style="height:1px; margin:0px;">
-JuniorEinstein님의 [별별 웹 특강] HTML + javascript 계산기 만들기 프로젝트!<br>
-https://cordelia273.space/32
 
-egoing님의 생활코딩 - 정규표현식과 JavaScript<br>
-https://opentutorials.org/course/743/6580
+
+[JuniorEinstein님의 [별별 웹 특강] HTML + javascript 계산기 만들기 프로젝트!](https://cordelia273.space/32 "JuniorEinstein님의 [별별 웹 특강] HTML + javascript 계산기 만들기 프로젝트!")
+
+[egoing님의 생활코딩 - 정규표현식과 JavaScript](https://opentutorials.org/course/743/6580 "정규표현식과 JavaScript")

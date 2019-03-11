@@ -163,6 +163,7 @@ C#, .Net Framework3.5 기본으로 그동안 개발을 해왔지만, 특정 외�
 
 <h1 style="margin:0px;"> 참고자료 </h1>
 <hr style="height:1px; margin:0px;">
-[C# TextBox 사이즈 변경] https://www.dazzii.com/c-textbox-%EC%82%AC%EC%9D%B4%EC%A6%88-%EB%B3%80%EA%B2%BD/
 
-[C# TextBox에 숫자만 입력받기] https://terrorjang.tistory.com/39
+[C# TextBox 사이즈 변경](https://www.dazzii.com/c-textbox-%EC%82%AC%EC%9D%B4%EC%A6%88-%EB%B3%80%EA%B2%BD/ "")
+
+[C# TextBox에 숫자만 입력받기](https://terrorjang.tistory.com/39 "C# TextBox에 숫자만 입력받기")
