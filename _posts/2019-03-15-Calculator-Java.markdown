@@ -64,7 +64,7 @@ API의 설계에 대한 글 중 "그래서 API를 설계할 때는 사용자가 
 
 ### 해결방법
 1. 박재성님의 [junit4 테스트 라이브러리 기본 사용법](https://www.youtube.com/watch?v=tyZMdwT3rIY "junit4 테스트 라이브러리 기본 사용법")을 통해 기초를 배웠습니다.  
-Kamang님의 [IT Blog](https://kamang-it.tistory.com/entry/JUnitJUnit-IDE%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B01 "")에서 IntelliJ에서 Test 코드를 생성하는 법을 배웠습니다.
+Kamang님의 [IT Blog](https://kamang-it.tistory.com/entry/JUnitJUnit-IDE%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B01 "IntelliJ Test 생성 방법")에서 IntelliJ에서 Test 코드를 생성하는 법을 배웠습니다.
 2. 이지영 님이 쓰신 [C로 배우는 쉬운 자료구조](http://www.yes24.com/Product/Goods/9333165?scode=029 "C로 배우는 쉬운 자료구조")라는 책을 오랜만에 펼쳐 이진트리를 다시 학습했습니다.
 3. 2.0 - 1.1 의 문제는 카이 호스트만 님의 [가장 빨리 만나는 코어자바9](http://www.yes24.com/Product/Goods/59417581?Acode=101 "가장 빨리 만나는 코어자바9")에서 답을 찾았습니다.  
 4. postFix의 기능을 한글로 적어 본 후 구분 지어지는 '기능'들의 순서를 적어보았습니다.  
