@@ -8,7 +8,7 @@ permalink: /about/
 
 ## 개인개발 내역
 
-현재는 **HTML5-CSS3,Javascript, GitHub blog**을 공부하면서 **[GitHub](https://github.com/KimYongjun413).**에 기록 중입니다.
+현재는 **HTML5-CSS3, Javascript, Java, GitHub blog**을 공부하면서 **[GitHub](https://github.com/KimYongjun413).**에 기록 중입니다.
 
 ## 프로젝트 내역
 
