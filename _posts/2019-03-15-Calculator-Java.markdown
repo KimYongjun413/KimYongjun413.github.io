@@ -74,7 +74,7 @@ Kamang님의 [IT Blog](https://kamang-it.tistory.com/entry/JUnitJUnit-IDE%EC%97%
  4)나머지 스택 팝업 하기.  
 그런 다음 '기능'을 분리해 보았습니다.
 
-다음은 JUnit으로 작성된 단위 테스트 일부 소스코드입니다. 전체 소스는 [이곳](https://github.com/KimYongjun413/DalLab-Mentoring/blob/master/Calculator_Java/src/test/CalculatorTest.java, "계산기 단위 테스트 코드")에서 확인하실 수 있습니다.
+다음은 JUnit으로 작성된 단위 테스트 일부 소스코드입니다. 전체 소스는 [이곳](https://github.com/KimYongjun413/DalLab-Mentoring/blob/master/Calculator_Java/src/test/CalculatorTest.java "계산기 단위 테스트 코드")에서 확인하실 수 있습니다.
 ```java
 @Test
     public void calculation() {
