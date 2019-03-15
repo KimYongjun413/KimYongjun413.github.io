@@ -186,7 +186,7 @@ API
 
 JUnit  
 [박재성님의 junit4 테스트 라이브러리 기본 사용법](https://www.youtube.com/watch?v=tyZMdwT3rIY "junit4 테스트 라이브러리 기본 사용법")  
-[junit4 테스트 라이브러리 기본 사용법](https://www.youtube.com/watch?v=tyZMdwT3rIY "junit4 테스트 라이브러리 기본 사용법")
+[Kamang님의 junit4 테스트 라이브러리 기본 사용법](https://www.youtube.com/watch?v=tyZMdwT3rIY "junit4 테스트 라이브러리 기본 사용법")
 
 Java  
 [가장 빨리 만나는 코어자바9](http://www.yes24.com/Product/Goods/59417581?Acode=101 "가장 빨리 만나는 코어자바9")
