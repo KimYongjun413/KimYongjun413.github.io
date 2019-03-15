@@ -74,91 +74,136 @@ Kamang님의 [IT Blog](https://kamang-it.tistory.com/entry/JUnitJUnit-IDE%EC%97%
  4)나머지 스택 팝업 하기.  
 그런 다음 '기능'을 분리해 보았습니다.
 
+다음은 JUnit으로 작성된 단위 테스트 일부 소스코드입니다. 전체 소스는 [이곳](https://github.com/KimYongjun413/DalLab-Mentoring/blob/master/Calculator_Java/src/test/CalculatorTest.java, "계산기 단위 테스트 코드")에서 확인하실 수 있습니다.
+```java
+@Test
+    public void calculation() {
+        BinaryTree bt = new BinaryTree();
+        
+        assertEquals( String.valueOf(125459.0),bt.calculation(bt.binaryTreeNode(postFix("5*(15+(2*5-3)*(54/2))*123-30*50/1500"))));
+        assertEquals( String.valueOf(110.0),bt.calculation(bt.binaryTreeNode(postFix("5*(15+(2*5-3))"))));
+
+        assertEquals( String.valueOf(0),bt.calculation(bt.binaryTreeNode(postFix("5*a"))));
+        assertEquals( String.valueOf(0),bt.calculation(bt.binaryTreeNode(postFix("5*+"))));
+        assertEquals( String.valueOf(0),bt.calculation(bt.binaryTreeNode(postFix("5*!!"))));
+        assertEquals( String.valueOf(0.9),bt.calculation(bt.binaryTreeNode(postFix("2.0 - 1.1"))));
+        assertEquals( String.valueOf(0),bt.calculation(bt.binaryTreeNode(postFix("2.A-1.001"))));
+
+    }
+    @Test
+    public void postFix() {
+        
+        assertEquals("5 15 2 5 * 3 - 54 2 / * + * 123 * 30 50 * 1500 / -", cal.postFix("5*(15+(2*5-3)*(54/2))*123-30*50/1500"));       
+        assertEquals("0", cal.postFix("5*abcd"));
+        
+    }
+
+    @Test
+    public void divide() {
+               
+        assertEquals("0.3333333333333333", cal.divide("1", "3"));
+        assertEquals("0", cal.divide("0", "0"));
+        assertEquals("infinity", cal.divide("1", "0"));
+        assertEquals("-infinity", cal.divide("-1", "0"));
+        assertEquals("0.1", cal.divide("1", "10"));
+    }
+
+    @Test
+    public void subtract() {
+
+        assertEquals("0.9", cal.subtract("2.0", "1.1"));        
+        assertEquals("-2", cal.subtract("-1", "1"));
+        assertEquals("0", cal.subtract("-1", "-1"));
+        assertEquals("2", cal.subtract("1", "-1"));
+        assertEquals("0.1", cal.subtract("1", "0.9"));
+
+    }
+```
 
 다음은 <b>'기능'</b>단위로 메서드를 분리하기 <b>전</b> postFix 메서드입니다. 전체 소스는 [이곳](https://github.com/KimYongjun413/DalLab-Mentoring/blob/33b91bc6b21ff250f520ee50ccdf598660eae0a5/Calculator_Java/src/main/Calculator.java "자바 계산기 히스토리")에서 확인하실 수 있습니다.
 ```java
 static String postFix(String formula) {
-        Stack<String> stack = new Stack<>();
-        char[] charFormula = formula.toCharArray();
-        StringBuffer result = new StringBuffer();
-        char values;
-        String preValues = "";
-        for (int i = 0; i < charFormula.length; i++) {
-            values = charFormula[i];
-            if(i != 0) preValues = String.valueOf(charFormula[i-1]);
-            switch (values) {
-                case '0':   case '1':   case '2':   case '3':   case '4':
-                case '5':   case '6':   case '7':   case '8':   case '9':
-                case '.':
-                    if(stack.empty() || (stack.peek().equals("(") && stack.size() == 1)) result.append(values);
-                    else if(i != 0 && isDouble(preValues)) result.append(values);
-                    else result.append(" " + values);
+    Stack<String> stack = new Stack<>();
+    char[] charFormula = formula.toCharArray();
+    StringBuffer result = new StringBuffer();
+    char values;
+    String preValues = "";
+    for (int i = 0; i < charFormula.length; i++) {
+        values = charFormula[i];
+        if(i != 0) preValues = String.valueOf(charFormula[i-1]);
+        switch (values) {
+            case '0':   case '1':   case '2':   case '3':   case '4':
+            case '5':   case '6':   case '7':   case '8':   case '9':
+            case '.':
+                if(stack.empty() || (stack.peek().equals("(") && stack.size() == 1)) result.append(values);
+                else if(i != 0 && isDouble(preValues)) result.append(values);
+                else result.append(" " + values);
 
-                    break;
-                case '+':   case '-':   case '/':   case '*':
-                    if (stack.isEmpty()) stack.push(String.valueOf(values));
-                    else {
-                        if (getWeight(stack.peek().charAt(0)) >= getWeight(values)) {
-                            result.append(" " + stack.pop());
-                            stack.push(String.valueOf(values));
-                        } else {
-                            stack.push(String.valueOf(values));
-                        }
+                break;
+            case '+':   case '-':   case '/':   case '*':
+                if (stack.isEmpty()) stack.push(String.valueOf(values));
+                else {
+                    if (getWeight(stack.peek().charAt(0)) >= getWeight(values)) {
+                        result.append(" " + stack.pop());
+                        stack.push(String.valueOf(values));
+                    } else {
+                        stack.push(String.valueOf(values));
                     }
-                    break;
-                case '(':
-                    stack.push(String.valueOf(values));
-                    break;
-                case ')':
-                    while (!stack.peek().equals("(")) result.append(" " + stack.pop());
-                    stack.pop();
-                    break;
-                default:
-            }
-        }
-        while (!stack.isEmpty()) {
-            String peek = stack.peek();
-            if (!peek.equals("(")) {
-                if (peek.equals("+") || peek.equals("-") || peek.equals("*") || peek.equals("/")) {
-                    result.append(" " + stack.pop());
-                } else {
-                    result.append(stack.pop());
                 }
-            }
-            else stack.pop();
+                break;
+            case '(':
+                stack.push(String.valueOf(values));
+                break;
+            case ')':
+                while (!stack.peek().equals("(")) result.append(" " + stack.pop());
+                stack.pop();
+                break;
+            default:
         }
-        return result.toString();
     }
+    while (!stack.isEmpty()) {
+        String peek = stack.peek();
+        if (!peek.equals("(")) {
+            if (peek.equals("+") || peek.equals("-") || peek.equals("*") || peek.equals("/")) {
+                result.append(" " + stack.pop());
+            } else {
+                result.append(stack.pop());
+            }
+        }
+        else stack.pop();
+    }
+    return result.toString();
+}
 ```
 
 
 다음은 <b>'기능'</b>단위로 분리한 메서드입니다. 전체 소스는 [이곳](https://github.com/KimYongjun413/DalLab-Mentoring/blob/900e62754bc39f601836cb53c9817664e7a5f4fc/Calculator_Java/src/main/Calculator.java "자바 계산기 히스토리")에서 확인하실 수 있습니다.
 ```java
 public static String getPostFixResult (char[] charFormula) {
-        Stack<String> stack = new Stack<>();
-        StringBuffer result = new StringBuffer();
+    Stack<String> stack = new Stack<>();
+    StringBuffer result = new StringBuffer();
 
-        for (int i = 0; i < charFormula.length; i++) {
-            switch (charFormula[i]) {
-                case '0':   case '1':   case '2':   case '3':   case '4':
-                case '5':   case '6':   case '7':   case '8':   case '9':
-                case '.':
-                    result = resultAppend(stack, charFormula, i, result);
-                    break;
-                case '+':   case '-':   case '/':   case '*': case '(':
-                    result = pushByWeight(stack, charFormula, i, result);
-                    break;
-                case ')':
-                    result = popByWeight(stack, charFormula, i, result);
-                    break;
-                case ' ': case ',':
-                    break;
-                default:
-                    return "0";
-            }
+    for (int i = 0; i < charFormula.length; i++) {
+        switch (charFormula[i]) {
+            case '0':   case '1':   case '2':   case '3':   case '4':
+            case '5':   case '6':   case '7':   case '8':   case '9':
+            case '.':
+                result = resultAppend(stack, charFormula, i, result);
+                break;
+            case '+':   case '-':   case '/':   case '*': case '(':
+                result = pushByWeight(stack, charFormula, i, result);
+                break;
+            case ')':
+                result = popByWeight(stack, charFormula, i, result);
+                break;
+            case ' ': case ',':
+                break;
+            default:
+                return "0";
         }
-        return popRemainAll(stack, result).toString();
     }
+    return popRemainAll(stack, result).toString();
+}
 ```
 
 <h1 style="margin:0px;"> 느낀점 </h1>
