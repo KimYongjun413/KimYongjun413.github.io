@@ -7,7 +7,7 @@ categories: Javascript
 tags: Javascript
 ---
 
-# (Javascript) 괄호없는 다항 사칙연산 계산기) 괄호없는 다항 사칙연산 계산기
+# (Javascript) 괄호없는 다항 사칙연산 계산기
 
 안녕하세요!! 김용준입니다.
 
