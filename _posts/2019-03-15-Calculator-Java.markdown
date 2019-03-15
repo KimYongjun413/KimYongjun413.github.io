@@ -28,7 +28,7 @@ Java의 대표적인 Testing Framework인 JUnit으로 '단위 테스트'를 할 
 ### 2. 트리 자료구조를 활용할 수 있을까요? 각 요소를 얼마나 독립적으로 만들어야 이 작업이 수월할까요?
 
 ‘트리 자료구조’가 무엇이고 어떻게 작동하는지를 다시 한번 공부한 후 개발을 시작했습니다.  
-개발 과정은 [제 깃허브](https://cordelia273.space/32 "Calculator_Java 폴더 참조")의 히스토리를 보시면 알 수 있습니다.
+개발 과정은 [제 깃허브](https://github.com/KimYongjun413/DalLab-Mentoring/commits/master/Calculator_Java "Calculator_Java 히스토리")의 히스토리를 보시면 알 수 있습니다.
 
 ### 3. 메서드 하나를 10줄 이하로 만들고, 주석 없이 이해가 쉬운 코드를 만들려면 무엇을 하면 좋을까요?
 제가 생각한 것은 다음과 같습니다.  
