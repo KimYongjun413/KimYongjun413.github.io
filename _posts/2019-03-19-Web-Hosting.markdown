@@ -35,12 +35,12 @@ tags: Javascript
 
 ### 1. [아이비로](http://www.ivyro.net/ "아이비로") 사이트에 방문하여 회원 가입 후 로그인한 후에 무료로 제공하는 호스팅을 신청합니다.
 
-<img src="./assets/ivyro_1.PNG" title="아이비로 회원가입" class="ivyro">
+<img src="/assets/ivyro_1.PNG" title="아이비로 회원가입" class="ivyro">
 
 
 ### 2. [무료 호스팅]을 누른 후 다음과 같이 계정 정보를 입력합니다.
 
-<img src="./assets/ivyro_2.PNG" title="아이비로 무료 호스팅" class="ivyro">
+<img src="/assets/ivyro_2.PNG" title="아이비로 무료 호스팅" class="ivyro">
 
 - 서비스 신청 사양  
 서버 타입 : UTF-8 / PHP 5.6 / MySQL 5.6  
@@ -53,12 +53,12 @@ MySQL 비밀번호 : 데이터를 저장할 때 필요한 DB 비밀번호 입니
 
 ### 3. 원격으로 파일을 올릴 수 있는 [FileZilla](http://filezilla-project.org/ "FileZilla") 프로그램을 설치합니다.
 
-<img src="./assets/ivyro_3.PNG" title="아이비로 다운로드" class="ivyro">
-<img src="./assets/ivyro_4.PNG" title="아이비로 다운로드" class="ivyro">
+<img src="/assets/ivyro_3.PNG" title="아이비로 다운로드" class="ivyro">
+<img src="/assets/ivyro_4.PNG" title="아이비로 다운로드" class="ivyro">
 
 ### 4. 내려받은 프로그램을 설치 후 다음과 같이 입력 요소를 채우고 [빠른 연결]버튼을 누릅니다. 이때 '비밀번호를 저장하겠습니까?'라고 물어보는 경고 창이 나타납니다. 비밀번호를 저장하면 다음에 접속할 때는 비밀번호를 입력하지 않아도 됩니다.
 
-<img src="./assets/ivyro_5.PNG" title="FileZilla 로그인" class="ivyro">
+<img src="/assets/ivyro_5.PNG" title="FileZilla 로그인" class="ivyro">
 
 - 호스트 : 도메인 주소만 입력합니다.(ex: ID.ivyro.net)
 - 사용자명 : 아까 만든 아이비로 계정 아이디를 입력합니다.
@@ -68,11 +68,11 @@ MySQL 비밀번호 : 데이터를 저장할 때 필요한 DB 비밀번호 입니
 
 ### 5. 간단한 문서를 작성 후 서버(웹 호스팅) 컴퓨터의 홈 디렉터리에 파일을 업로드합니다.
 
-<img src="./assets/ivyro_6.PNG" title="FileZilla 업로드" class="ivyro">
+<img src="/assets/ivyro_6.PNG" title="FileZilla 업로드" class="ivyro">
 
 ### 6. 브라우저에 앞에서 가입했던 도메인(계정ID.ivyro.net)을 입력한 후 이동하여 정상적으로 페이지가 나타나는지 확인합니다.
 
-<img src="./assets/ivyro_7.PNG" title="페이지 확인" class="ivyro">
+<img src="/assets/ivyro_7.PNG" title="페이지 확인" class="ivyro">
 
 <h1 style="margin:0px;"> 참고자료 </h1>
 <hr style="height:1px; margin:0px;">
