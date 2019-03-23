@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  (Java)피드백 적용한 self number의 합 프로그램
-date:   2019-03-15 11:50:00
+date:   2019-03-22 11:50:00
 author: Kim Yongjun
 categories: Java
 tags: Java
