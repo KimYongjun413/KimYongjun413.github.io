@@ -167,7 +167,17 @@ public void selfNumber() {
 
 <h1 style="margin:0px;"> 피드백 </h1>
 <hr style="height:1px; margin:0px;">
-1. 추가 피드백을 받으면 여기에 올리도록 하겠습니다.
+제가 받은 피드백 입니다.<br>
+
+- .gitignore를 활용해서 불필요한 파일들을 제거해 주세요.
+
+- 테스트 코드를 먼저 작성하면 인터페이스가 좀 달라질 겁니다. 예를 들어 assertEquals(2, ssn.d(String.valueOf(1))); 같은 경우엔 ssn이란 이름이 불명확해 보이고, 그래서 이 이름을 어떻게 할지 먼저 고민하게 됩니다. 그리고 입력이 String이 되는데, 이것도 또 고민하게 되죠. 여기서 이걸 정리하지 않았기 때문에 코드 전체에 String.valueOf가 퍼져나갑니다.
+
+- 테스트 코드는 가능하면 주석이 없게 하고, 각 단위를 메서드로 분리해 보세요.<br> [야살님 - 테스트 코드 작성 템플릿](https://github.com/ahastudio/til/blob/master/blog/2018/12-08-given-when-then.md?fbclid=IwAR3gKIWCiVBsbca9R16owI6CIz53bL6NSz6RTf1x0VsgcpaJ1HjKDmYPqls "테스트 코드 작성 템플릿")
+
+- generators 테스트 코드를 훨씬 단순하게 만들려면 어떻게 해야 할까요?<br>
+[JUnit4 - Assert](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html?fbclid=IwAR0aw1F8zlQgm-txEPAljubFDhk4-JXzYUssR6dwHrY4VS10AE75Lg_i0ZE#assertArrayEquals(java.lang.Object[],%20java.lang.Object[]) "JUnit4 - Assert")<br>
+[Oracle - Class ArrayList<E>](https://docs.oracle.com/javase/9/docs/api/java/util/ArrayList.html?fbclid=IwAR3lSla0vKojvHduTZeoaFMffrhASfi2MjwQmRyKU6U6UvhYBHT1NOxXXEk#toArray-T:A- "Oracle - Class ArrayList<E>")
 
 <h1 style="margin:0px;"> 참고자료 </h1>
 <hr style="height:1px; margin:0px;">
