@@ -159,7 +159,7 @@ public void selfNumber() {
 
 <h1 style="margin:0px;"> 배운점 </h1>
 <hr style="height:1px; margin:0px;">
-- 느낀점과 비슷하지만 '단위 테스트'의 중요성 및 
+- 느낀점과 비슷하지만 '단위 테스트'의 중요성을 알 수 있었습니다.
 
 <h1 style="margin:0px;"> 앞으로의 계획 </h1>
 <hr style="height:1px; margin:0px;">
@@ -179,6 +179,7 @@ public void selfNumber() {
 [JUnit4 - Assert](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html?fbclid=IwAR0aw1F8zlQgm-txEPAljubFDhk4-JXzYUssR6dwHrY4VS10AE75Lg_i0ZE#assertArrayEquals(java.lang.Object[],%20java.lang.Object[]) "JUnit4 - Assert")<br>
 [Oracle - Class ArrayList<E>](https://docs.oracle.com/javase/9/docs/api/java/util/ArrayList.html?fbclid=IwAR3lSla0vKojvHduTZeoaFMffrhASfi2MjwQmRyKU6U6UvhYBHT1NOxXXEk#toArray-T:A- "Oracle - Class ArrayList<E>")
 
+[피드백 적용한 Self Number 포스팅](https://kimyongjun413.github.io/java/2019/03/22/Self-Number-by-feedback.html "피드백 적용한 Self Number 포스팅")입니다.
 <h1 style="margin:0px;"> 참고자료 </h1>
 <hr style="height:1px; margin:0px;">
 
