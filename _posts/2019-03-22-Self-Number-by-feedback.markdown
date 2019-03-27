@@ -136,6 +136,20 @@ generators(5)가 반환하게 될 리스트와 직접 비교하는 assertArrayEq
 
 - 추가적으로 피드백을 받는다면 지속적으로 수정할 계획입니다.
 
+<h1 style="margin:0px;"> 추가 피드백 </h1>
+<hr style="height:1px; margin:0px;">
+
+- naturalNumbers는 너무 과한 느낌인데 d, generator 이런 거에 엄청난 맥락이 숨어있지 않거든요. 제가 이런 곳에서 제가 쓰는 이름은 math 같은 거에요.
+
+- IntelliJ를 쓰신다면 (맥 기준으로) option+command+L을 눌러보세요. 정적분석 삼대장을 쓰시면 손쉽게 관리 가능합니다.https://youtu.be/PT2RtnVeMNo (39분 41초부터)
+
+<br>
+<b>피드백 적용</b><br>
+1. 피드백을 바탕으로 테스트코드의 변수명을 naturalNumbers에서 math로 변경하였습니다.<br>
+2. 정적분석 삼대장 plugin을 설치하였고, checkstyle 통해 오탈자를 수정할 수 있었습니다.
+
+적용된 소스는 [여기](https://github.com/KimYongjun413/DalLab-Mentoring/commit/9afa2bed2c588e71e4805bad7d52722e1b0b6003 "Self Number GitHub")를 가시면 볼 수 있습니다.
+
 <h1 style="margin:0px;"> 참고자료 </h1>
 <hr style="height:1px; margin:0px;">
 
