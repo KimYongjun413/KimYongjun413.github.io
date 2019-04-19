@@ -86,7 +86,7 @@ IDE는 visual studio 2010를 사용하였습니다.
 * hosts [위키백과](https://ko.wikipedia.org/wiki/Hosts "hosts")에 따르면 'hosts 파일은 악성 소프트웨어의 공격 벡터로 악용될 수 있다.'라고 합니다.<br>
 그래서 수정 시 백신에 감지되어 다음과 같은 알림이 뜹니다. <br>특정 사이트의 접속을 차단하는 다른 방법을 찾아봐야 할 것 같습니다.
 
-<center><img src="assets\TodoImage\hostsChanged.JPG" width="400" height="200"></center>
+<center><img src="/assets/TodoImage/hostsChanged.JPG" width="400" height="200"></center>
 
 <h1 style="margin:0px;"> 프로그램 미리보기 </h1>
 
