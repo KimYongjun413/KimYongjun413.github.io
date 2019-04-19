@@ -91,19 +91,19 @@ IDE는 visual studio 2010를 사용하였습니다.
 <h1 style="margin:0px;"> 프로그램 미리보기 </h1>
 
 ### 초기화면
-<center><img src="/assets/TodoImage/init.JPG" width="400" height="200"></center>
+<center><img src="/assets/TodoImage/init.JPG" width="400" height="400"></center>
 
 ### 파일 불러오기
-<center><img src="/assets/TodoImage/open1.JPG" width="400" height="200"></center>
-<center><img src="/assets/TodoImage/open2.JPG" width="400" height="200"></center>
+<center><img src="/assets/TodoImage/open1.JPG" width="400" height="400"></center><br>
+<center><img src="/assets/TodoImage/open2.JPG" width="400" height="400"></center>
 
 ### 결과 확인하기
 #### 통과
-<center><img src="/assets/TodoImage/success.JPG" width="400" height="200"></center>
+<center><img src="/assets/TodoImage/success.JPG" width="400" height="400"></center>
 
 #### 실패
-<center><img src="/assets/TodoImage/fail1.JPG" width="400" height="200"></center>
-<center><img src="/assets/TodoImage/fail2.JPG" width="400" height="200"></center>
+<center><img src="/assets/TodoImage/fail1.JPG" width="400" height="400"></center><br>
+<center><img src="/assets/TodoImage/fail2.JPG" width="400" height="400"></center>
 
 
 <hr style="height:1px; margin:0px;">
