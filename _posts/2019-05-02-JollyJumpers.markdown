@@ -20,14 +20,14 @@ Jolly Jumpers를 구하는 프로그램을 만들었습니다.<br>
 
 아샬님과의 고민 상담을 통해 설정된 제 스스로의 '훈련 목표'는 다음과 같습니다.
 
-### 1. 메서드 하나가 8줄이 넘지 않게 하자.
-### 2. else를 쓰지 말자.
+#### 1. 메서드 하나가 8줄이 넘지 않게 하자.
+#### 2. else를 쓰지 말자.
 <br>
 
 <h1 style="margin:0px;"> 개발과정 </h1>
 <hr style="height:1px; margin:0px;">
 
-[단위 테스트 코드](https://github.com/KimYongjun413/DalLab-Mentoring/blob/master/SelfNumber/test/SumOfSelfNumberTest.java "단위 테스트 코드 깃허브 링크")는 다음과 같이 작성했습니다.
+[단위 테스트 코드](https://github.com/KimYongjun413/DalLab-Mentoring/blob/master/JollyJumpers/test/JollyJumpersTest.java "단위 테스트 코드 깃허브 링크")는 다음과 같이 작성했습니다.
 ```java
     @Test
     public void IsJolly() {
