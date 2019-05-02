@@ -44,6 +44,43 @@ Jolly Jumpers를 구하는 프로그램을 만들었습니다.<br>
 전체 소스는 [여기](https://github.com/KimYongjun413/DalLab-Mentoring/tree/master/JollyJumpers "Self Number GitHub")를 가시면 볼 수 있습니다.
 <br><br>
 
+<h1 style="margin:0px;"> 피드백 반영 </h1>
+<hr style="height:1px; margin:0px;">
+
+if문을 쓰면 최소 3줄이 된다고 생각해야 한다는 피드백을 받았습니다.<br>
+이 9줄 짜리 메서드를 '훈련 목표'에 맞게 수정 할 것입니다.
+```java
+private static int[] setDiff(int[] numbers, int[] diff) {
+        int absSub = 0;
+        for(int i=0; i < numbers.length - 1; i++) {
+            absSub = Math.abs(numbers[i] - numbers[i+1]);
+            if(absSub > numbers.length) {
+                continue;
+            }
+            diff[absSub]++;
+        }
+        return diff;
+    }
+```
+SRP(단일 책임 원칙)을 생각해 보았을 때 setDiff 메서드는 2가지 책임이 있다고 생각했습니다.<br>
+1. 인접한 수의 절대 차이값이 Jolly Jumper를 만족하는 유효한 수 인가를 확인하는 책임
+2. 인접한 수의 절대 차이값이 인덱스가 되는 diff배열에 그 수를 담는 책임
+
+1번 책임 + 직접 유요한 수를 반환하는 메서드를 만들었습니다.
+```java
+    private static int[] setDiff(int[] numbers, int[] diff) {
+        for(int i=0; i < numbers.length - 1; i++) {
+            diff[getValidNumber(numbers.length, Math.abs(numbers[i] - numbers[i+1]))]++;
+        }
+        return diff;
+    }
+
+    private static int getValidNumber(int numbersLength, int absSub) {
+        if(absSub <= numbersLength)
+            return absSub;
+        return 0;
+    }
+```
 <h1 style="margin:0px;"> 느낀점 </h1>
 <hr style="height:1px; margin:0px;">
 
@@ -65,6 +102,15 @@ Jolly Jumpers를 구하는 프로그램을 만들었습니다.<br>
 
 <h1 style="margin:0px;"> 피드백 </h1>
 <hr style="height:1px; margin:0px;">
+
+ - 아샬님 피드백 : 라인을 줄이기 위해 if문을 한 줄로 만드는 건 좋지 않습니다.<br> 
+ if문을 쓰면 최소 3줄이 된다고 생각하셔야 합니다.<br>
+ ```java
+    if (조건) {
+        처리;
+    }
+```
+- 이 상황에서 라인을 줄이려면 근본적으로 다른 전략(이라고 해도 대부분 extract method)이 필요합니다.
 <br><br>
 
 <h1 style="margin:0px;"> 참고자료 </h1>
