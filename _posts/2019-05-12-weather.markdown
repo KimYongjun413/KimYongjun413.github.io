@@ -82,12 +82,12 @@ IDE는 visual studio Code를 사용하였습니다.
 <h1 style="margin:0px;"> 앞으로의 계획 </h1>
 <hr style="height:1px; margin:0px;">
 
-- 제가 주로 날씨 어플을 통해 보는 정보는 어제 대비 온도입니다.<br>
- 그리고 항상 알고 싶어 하는 건 날씨에 맞는 옷차림이었습니다.
+* 제가 주로 날씨 어플을 통해 보는 정보는 어제 대비 온도입니다.<br>
+그리고 항상 알고 싶어 하는 건 날씨에 맞는 옷차림이었습니다.
 
-- 개발해놓고 보니 새로 고침 기능이 필요해 보입니다.
+* 개발해놓고 보니 새로 고침 기능이 필요해 보입니다.
 
-- 위에서 말한 제가 필요로 하는 요구 사항을 추가로 개발할 예정입니다.
+* 위에서 말한 제가 필요로 하는 요구 사항을 추가로 개발할 예정입니다.
 
 <h1 style="margin:0px;"> 피드백 </h1>
 <hr style="height:1px; margin:0px;">
@@ -97,5 +97,5 @@ IDE는 visual studio Code를 사용하였습니다.
 <h1 style="margin:0px;"> 참고자료 </h1>
 <hr style="height:1px; margin:0px;">
 
-* [노마드 코더](https://academy.nomadcoders.co/courses "노마드 코더")
-* [Expo Installation](https://docs.expo.io/versions/latest/introduction/installation/ "Expo Installation")
+- [노마드 코더](https://academy.nomadcoders.co/courses "노마드 코더")
+- [Expo Installation](https://docs.expo.io/versions/latest/introduction/installation/ "Expo Installation")
