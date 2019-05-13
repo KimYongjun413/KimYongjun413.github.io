@@ -53,8 +53,7 @@ IDE는 visual studio Code를 사용하였습니다.
 
 ### Expo 설치
 * 앱 테스트가 빠르고, IOS/Android 전용 네이티브 앱을 만들 수 있습니다.
-* 설치 가이드 : https://docs.expo.io/versions/latest/introduction/installation
-<br>간단하게 요약하면 다음과 같습니다.<br>
+* [설치 가이드](https://docs.expo.io/versions/latest/introduction/installation "설치 가이드") 간단하게 요약하면 다음과 같습니다.<br>
     1. npm install expo-cli --global
     2. expo init [Proeject name]
     3. 프로젝트로 이동 후 expo start
@@ -67,13 +66,17 @@ IDE는 visual studio Code를 사용하였습니다.
 
 <h1 style="margin:0px;"> 프로그램 미리보기 </h1>
 
-### 로딩화면
-<center><img src="/assets/weather/LoadingVIew.jpg" width="300" height="600"></center>
-
-### 날씨 뷰
-<center><img src="/assets/weather/WeatherView.jpg" width="300" height="600"></center><br>
-
-
+<table>
+<tr>
+    <td align="center"><b>로딩 화면</b></td>
+    <td align="center"><b>날씨 화면</b></td>
+<tr>
+<tr>
+    <td><center><img src="/assets/weather/LoadingVIew.jpg" width="300" height="600"></center></td>
+    <td><center><img src="/assets/weather/WeatherView.jpg" width="300" height="600"></center></td>
+<tr>
+</table>
+<br>
 <hr style="height:1px; margin:0px;">
 
 <h1 style="margin:0px;"> 앞으로의 계획 </h1>
