@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  (React Native)날씨 어플
-date:   2019-04-19 16:00:00
+date:   2019-05-12 23:00:00
 author: Kim Yongjun
 categories: React Native
 tags: React Native
@@ -68,10 +68,10 @@ IDE는 visual studio Code를 사용하였습니다.
 <h1 style="margin:0px;"> 프로그램 미리보기 </h1>
 
 ### 로딩화면
-<center><img src="/assets/weather/LoadingView.jpg" width="400" height="600"></center>
+<center><img src="/assets/weather/LoadingVIew.jpg" width="300" height="600"></center>
 
 ### 날씨 뷰
-<center><img src="/assets/weather/WeatherView.jpg" width="400" height="600"></center><br>
+<center><img src="/assets/weather/WeatherView.jpg" width="300" height="600"></center><br>
 
 
 <hr style="height:1px; margin:0px;">
