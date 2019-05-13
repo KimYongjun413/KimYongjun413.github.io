@@ -70,11 +70,11 @@ IDE는 visual studio Code를 사용하였습니다.
 <tr>
     <td align="center"><b>로딩 화면</b></td>
     <td align="center"><b>날씨 화면</b></td>
-<tr>
+</tr>
 <tr>
     <td><center><img src="/assets/weather/LoadingVIew.jpg" width="300" height="600"></center></td>
     <td><center><img src="/assets/weather/WeatherView.jpg" width="300" height="600"></center></td>
-<tr>
+</tr>
 </table>
 <br>
 <hr style="height:1px; margin:0px;">
