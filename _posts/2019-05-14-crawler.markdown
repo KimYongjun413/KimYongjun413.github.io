@@ -109,4 +109,4 @@ IDE는 IntelliJ를 사용하였습니다.
 
 - [jsoup: Java HTML Parser](https://jsoup.org/ "jsoup: Java HTML Parser")
 
-- [Extract <data-id > from HTML with JSoup](https://stackoverflow.com/questions/48562448/extract-data-id-from-html-with-jsoup/48563022 "Extract <data-id > from HTML with JSoup")
+- [Extract data-id from HTML with JSoup](https://stackoverflow.com/questions/48562448/extract-data-id-from-html-with-jsoup/48563022 "Extract data-id from HTML with JSoup")
