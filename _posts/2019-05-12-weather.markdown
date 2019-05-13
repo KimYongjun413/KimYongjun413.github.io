@@ -1,0 +1,98 @@
+---
+layout: post
+title:  (React Native)날씨 어플
+date:   2019-04-19 16:00:00
+author: Kim Yongjun
+categories: React Native
+tags: React Native
+---
+
+# 날씨 어플
+
+안녕하세요!! 김용준입니다.
+
+이번 주 달랩 멘토링 과제는 '중요한 정보를 알려주는 프로그램' 입니다.  
+
+저는 날씨를 알려주는 간단한 어플을 만들었습니다.
+
+이 프로그램에 사용된 언어는 Javascript 이고 React Native 라이브러리를 사용했습니다.<br>
+IDE는 visual studio Code를 사용하였습니다.  
+
+<h1 style="margin:0px;"> 코딩전 확인</h1>
+<hr style="height:1px; margin:0px;">
+
+### 1. 이 프로그램을 사용하는 상황과 필수 요소, 제약 조건 등을 정합니다. “내가 이 프로그램을 쓴다면?”이라고 가정하면 더 쉬울 수 있습니다.
+
+* 저는 아침에 일어나자마자 날씨 어플로 날씨를 확인합니다.<br> 
+이미 날씨 어플들이 많이 있지만 React Native도 배울 겸 만들어 보기로 했습니다.
+
+### 2. 이 프로그램에 무엇을 입력했을 때 어떤 결과가 나와야 하는지 유형을 분류하고 구체적인 사례를 찾아 봅니다.
+* 날씨 데이터 가져오기 :
+    - 날씨 데이터를 제공하는 API를 통해 날씨 데이터를 가져옵니다.
+
+* 결과 : 
+    - 날씨 및 온도를 표현해줍니다.
+
+### 3. 어디까지 구현할 건지, 무엇이 가장 중요한지, 어떤 순서대로 진행해야 할지 결정합니다.
+* 구현 범위 : 날씨 데이터를 통해 날씨, 온도 그리고 간단한 안내 메시지를 보여줍니다.
+* 중요사항 : 
+    1. 현재 날씨 정보를 받아 올 수 있어야 합니다.    
+* 구현 순서 
+    1. 데이터를 가져오는 로딩 뷰를 먼저 구현합니다.
+    2. 특정 날씨 뷰를 개발합니다.
+    3. API로부터 날씨 데이터를 받아오는 메서드를 개발합니다.
+    4. 받아온 날씨 데이터를 표현할 수 있도록 특정 날씨 뷰를 수정합니다.
+    5. 안드로이드 버전으로 빌드 하여 apk를 추출 후 제 스마트폰에 설치할 수 있게 합니다.
+
+### 4. 구현합니다.
+
+전체 소스는 [여기](https://github.com/KimYongjun413/weather "weather_React_Native")를 가시면 볼 수 있습니다.
+
+<h1 style="margin:0px;"> 주요 개발과정 </h1>
+<hr style="height:1px; margin:0px;">
+
+### Expo 설치
+* 앱 테스트가 빠르고, IOS/Android 전용 네이티브 앱을 만들 수 있습니다.
+* 설치 가이드 : https://docs.expo.io/versions/latest/introduction/installation
+<br>간단하게 요약하면 다음과 같습니다.<br>
+    1. npm install expo-cli --global
+    2. expo init [Proeject name]
+    3. 프로젝트로 이동 후 expo start
+    4. 스마트폰에 expo 검색 후 설치
+    5. 3에서 나온 qr코드를 4에서 설치한 앱을 통해 스캔
+  
+### 날씨 API
+* [OpenWeatherMap](https://openweathermap.org/ "OpenWeatherMap")
+* 회원가입 후 API Key를 발급받아 날씨 정보를 가져옵니다.
+
+<h1 style="margin:0px;"> 프로그램 미리보기 </h1>
+
+### 로딩화면
+<center><img src="/assets/weather/LoadingView.jpg" width="400" height="600"></center>
+
+### 날씨 뷰
+<center><img src="/assets/weather/WeatherView.jpg" width="400" height="600"></center><br>
+
+
+<hr style="height:1px; margin:0px;">
+
+<h1 style="margin:0px;"> 앞으로의 계획 </h1>
+<hr style="height:1px; margin:0px;">
+
+- 제가 주로 날씨 어플을 통해 보는 정보는 어제 대비 온도입니다.<br>
+ 그리고 항상 알고 싶어 하는 건 날씨에 맞는 옷차림이었습니다.
+
+- 개발해놓고 보니 새로 고침 기능이 필요해 보입니다.
+
+- 위에서 말한 제가 필요로 하는 요구 사항을 추가로 개발할 예정입니다.
+
+<h1 style="margin:0px;"> 피드백 </h1>
+<hr style="height:1px; margin:0px;">
+- 
+
+
+<h1 style="margin:0px;"> 참고자료 </h1>
+<hr style="height:1px; margin:0px;">
+
+* [노마드 코더](https://academy.nomadcoders.co/courses "노마드 코더")
+* [Expo Installation](https://docs.expo.io/versions/latest/introduction/installation/ "Expo Installation")
