@@ -72,8 +72,30 @@ IDE는 IntelliJ를 사용하였습니다.
   
 ### Jsoup 사용법
 * [jsoup: Java HTML Parser](https://jsoup.org/ "jsoup: Java HTML Parser")에서 API Reference를 보면 사용법이 나와있습니다.
+<br>
 
+### 기사 제목과 URL을 가지고 와 간단한 HTML 페이지 만들기
+* 기사 제목과 기사 URL을 가지고 와<br>
+HTML 페이지에 들어갈 태그를 생성하는 메서드를 추가했습니다.
+```Javascript
+private static String makeHtmlTag(Elements elements) {
+        StringBuilder htmlTag = new StringBuilder();
+        for (Element element : elements.select("li > a")) {
+            htmlTag.append("<li><a href=\"https://sports.news.naver.com")
+                    .append(element.attr("href"))
+                    .append("\"><span>")
+                    .append(element.getElementsByTag("span").text())
+                    .append("</span></a></li>");
+        }
+        return htmlTag.toString();
+    }
+```
 
+### writeHtml 메서드의 테스트 코드가 추가되었습니다
+
+### Jsoup 공식 홈페이지의 Cookbook contents를 테스트한 코드가 추가되었습니다.
+
+<br>
 <h1 style="margin:0px;"> 프로그램 미리보기 </h1>
 
 <table>
@@ -85,6 +107,14 @@ IDE는 IntelliJ를 사용하였습니다.
     <td><center><img src="/assets/crawler/BaseballNews.PNG" width="350" height="500"></center></td>
     <td><center><img src="/assets/crawler/CrawlingView.PNG" width="350" height="500"></center></td>
 </tr>
+<tr>
+    <td align="center"><b>네이버 스포츠 뉴스</b></td>
+    <td align="center"><b>제목,URL 모음(15일 수정)</b></td>
+</tr>
+<tr>
+    <td><center><img src="/assets/crawler/MajorNews.PNG" width="350" height="500"></center></td>
+    <td><center><img src="/assets/crawler/CrawledNews.PNG" width="350" height="500"></center></td>
+</tr>
 </table>
 <br>
 <hr style="height:1px; margin:0px;">
@@ -93,8 +123,8 @@ IDE는 IntelliJ를 사용하였습니다.
 <hr style="height:1px; margin:0px;">
 
 - 구현순서에 기재한 나머지 부분을 개발할 계획입니다.
-    1. 기사 제목과 URL을 가지고 올 수 있도록 수정할 것입니다.
-    2. 간단한 HTML 페이지로 만들어 표현할 수 있도록 개발할 것입니다.
+    1. 기사 제목과 URL을 가지고 올 수 있도록 수정할 것입니다.(완료)
+    2. 간단한 HTML 페이지로 만들어 표현할 수 있도록 개발할 것입니다.(완료)
     3. 한화 구단 최신 소식을 모아올 수 있도록 개발할 것입니다.
     4. 4번의 데이터를 3번 HTML 페이지에 표현 가능하도록 개발할 것입니다.
 
