@@ -3,8 +3,8 @@ layout: post
 title:  (React Native)날씨 어플
 date:   2019-05-12 23:00:00
 author: Kim Yongjun
-categories: React Native
-tags: React Native
+categories: ReactNative
+tags: ReactNative
 ---
 
 # 날씨 어플
