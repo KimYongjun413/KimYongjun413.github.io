@@ -125,7 +125,9 @@ public static String absUrl(String url, String relUrl) throwsMalformedURLExcepti
  - 테스트 코드를 작성한 덕분에 다시 구현한 메서드가 제대로 작동하는지 확인하기가 무척 편했습니다.
  - 이래서 테스트 코드, 테스트 코드 하는가 봅니다.
 
+
  #### 2. HTML Template를 사용하여 주요뉴스.html 작성하도록 wirteHtml 메서드 수정했습니다.
+
  ```Java
  public static String writeHtml(String htmlTag) throws IOException {
     String content = Jsoup.parse(new File("src/main/htmlTemplate/MajorNewsTemplate.html"), "UTF-8").toString();
