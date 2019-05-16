@@ -73,8 +73,13 @@ IDE는 IntelliJ를 사용하였습니다.
 ### Jsoup 사용법
 * [jsoup: Java HTML Parser](https://jsoup.org/ "jsoup: Java HTML Parser")에서 API Reference를 보면 사용법이 나와있습니다.
 <br>
+<br>
 
-### 기사 제목과 URL을 가지고 와 간단한 HTML 페이지 만들기
+### 15일 수정사항
+<hr>
+
+#### 기사 제목과 URL을 가지고 와 간단한 HTML 페이지 만들기
+
 * 기사 제목과 기사 URL을 가지고 와<br>
 HTML 페이지에 들어갈 태그를 생성하는 메서드를 추가했습니다.
 ```Javascript
@@ -91,10 +96,42 @@ private static String makeHtmlTag(Elements elements) {
     }
 ```
 
-### writeHtml 메서드의 테스트 코드가 추가되었습니다
+#### writeHtml 메서드의 테스트 코드가 추가되었습니다.
 
-### Jsoup 공식 홈페이지의 Cookbook contents를 테스트한 코드가 추가되었습니다.
+#### Jsoup 공식 홈페이지의 Cookbook contents를 테스트한 코드가 추가되었습니다.
 
+#### absUrl메서드를 만들었습니다.
+
+- 공통경로를 가지는 시점을 기준으로 Base URL과 상대경로 URL을 이어붙이는 메서드입니다.
+```Java
+public static String absUrl(String url, String relHref) {
+    int idx = url.indexOf(relHref.split("/")[1]);
+    return url.substring(0,idx -1) + relHref;
+}
+```
+<br><br>
+### 16일 수정사항
+<hr>
+
+#### 아샬님의 피드백을 받아 참고자료를 활용하여 absUrl메서드를 수정했습니다.
+```Java
+public static String absUrl(String url, String relUrl) throwsMalformedURLException {
+    URL baseUrl = new URL(url);
+    URL relativeUrl = new URL(baseUrl,relUrl);
+    return relativeUrl.toString();
+}
+```
+ - 테스트 코드를 작성한 덕분에 다시 구현한 메서드가 제대로 작동하는지 확인하기가 무척 편했습니다.
+ - 이래서 테스트 코드, 테스트 코드 하는가 봅니다.
+
+ #### HTML Template를 사용하여 주요뉴스.html 작성하도록 wirteHtml 메서드 수정했습니다.
+ ```Java
+ public static String writeHtml(String htmlTag) throws IOException {
+    String content = Jsoup.parse(new File("src/main/htmlTemplate/MajorNewsTemplate.html"), "UTF-8").toString();
+    content = content.replace("<li>htmlTag</li>", htmlTag);
+    return content;
+}
+ ```
 <br>
 <h1 style="margin:0px;"> 프로그램 미리보기 </h1>
 
@@ -115,6 +152,14 @@ private static String makeHtmlTag(Elements elements) {
     <td><center><img src="/assets/crawler/MajorNews.PNG" width="350" height="500"></center></td>
     <td><center><img src="/assets/crawler/CrawledNews.PNG" width="350" height="500"></center></td>
 </tr>
+<tr>
+    <td align="center"><b>네이버 스포츠 뉴스</b></td>
+    <td align="center"><b>HTML Template적용(16일 수정)</b></td>
+</tr>
+<tr>
+    <td><center><img src="/assets/crawler/kboNews.PNG" width="350" height="500"></center></td>
+    <td><center><img src="/assets/crawler/KBOMajorNews.PNG" width="350" height="500"></center></td>
+</tr>
 </table>
 <br>
 <hr style="height:1px; margin:0px;">
@@ -125,13 +170,18 @@ private static String makeHtmlTag(Elements elements) {
 - 구현순서에 기재한 나머지 부분을 개발할 계획입니다.
     1. 기사 제목과 URL을 가지고 올 수 있도록 수정할 것입니다.(완료)
     2. 간단한 HTML 페이지로 만들어 표현할 수 있도록 개발할 것입니다.(완료)
-    3. 한화 구단 최신 소식을 모아올 수 있도록 개발할 것입니다.
-    4. 4번의 데이터를 3번 HTML 페이지에 표현 가능하도록 개발할 것입니다.
+    3. 한화 구단 최신 소식을 모아올 수 있도록 개발할 것입니다.(실패)
+         - URL을 통해 받은 Document를 봤을 때 기사 내용의 ul 태그만 빠져있는 걸 확인했습니다.    
 
 <h1 style="margin:0px;"> 피드백 </h1>
 <hr style="height:1px; margin:0px;">
 
-- 
+- 아샬님 피드백<br>
+href 속성을 쓰셨으면 상대경로가 나오는 게 맞습니다.<br>
+절대경로로 “변환”하는 방법을 찾아보시면 도움이 될 거에요.<br>
+https://nodejs.org/api/url.html<br>
+https://docs.oracle.com/javase/10/docs/api/java/net/URL.html<br>
+https://www.baeldung.com/java-url<br>
 
 
 <h1 style="margin:0px;"> 참고자료 </h1>
@@ -140,3 +190,7 @@ private static String makeHtmlTag(Elements elements) {
 - [jsoup: Java HTML Parser](https://jsoup.org/ "jsoup: Java HTML Parser")
 
 - [Extract data-id from HTML with JSoup](https://stackoverflow.com/questions/48562448/extract-data-id-from-html-with-jsoup/48563022 "Extract data-id from HTML with JSoup")
+
+- https://nodejs.org/api/url.html
+- https://docs.oracle.com/javase/10/docs/api/java/net/URL.html
+- https://www.baeldung.com/java-url
