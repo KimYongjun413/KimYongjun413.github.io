@@ -43,11 +43,11 @@ IDE는 IntelliJ를 사용하였습니다.
 * 중요사항 : 
     1. 제가 원하는 야구 뉴스를 모아올 수 있어야 합니다.
 * 구현 순서 
-    1. 기사 제목을 모아오는 기능을 개발합니다.(완료)
-    2. 기사 제목과 URL을 가지고 올 수 있도록 수정합니다.(예정)
-    3. 간단한 HTML 페이지로 만들어 표현할 수 있도록 개발합니다.(예정)
-    4. 한화 구단 최신 소식을 모아올 수 있도록 개발합니다.(예정)
-    5. 4번의 데이터를 3번 HTML 페이지에 표현 가능하도록 개발합니다.(예정)
+    1. 기사 제목을 모아오는 기능을 개발합니다.
+    2. 기사 제목과 URL을 가지고 올 수 있도록 수정합니다.
+    3. 간단한 HTML 페이지로 만들어 표현할 수 있도록 개발합니다.
+    4. 한화 구단 최신 소식을 모아올 수 있도록 개발합니다.
+    5. 4번의 데이터를 3번 HTML 페이지에 표현 가능하도록 개발합니다.
 
 ### 4. 구현합니다.
 
@@ -126,7 +126,7 @@ public static String absUrl(String url, String relUrl) throwsMalformedURLExcepti
  - 이래서 테스트 코드, 테스트 코드 하는가 봅니다.
 
 
- #### 2. HTML Template를 사용하여 주요뉴스.html 작성하도록 wirteHtml 메서드 수정했습니다.
+ #### 2. 주요뉴스.html 작성시 HTML Template를 사용하도록 wirteHtml 메서드 수정했습니다.
 
  ```Java
  public static String writeHtml(String htmlTag) throws IOException {
