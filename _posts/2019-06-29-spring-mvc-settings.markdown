@@ -27,23 +27,7 @@ tags: Java
 - 모델 2방식 : '로직과 화면을 분리'하는 스타일의 개발 방식
 - 스프링 MVC의 기본 구조
     1. 사용자의 Request는 Front-Controller인 DispatcherServlet을 통해서 처리.
-    web.xml을 보면 모든 Request를 DispatcherServelt이 받도록 처리.
-    ```java
-	<servlet>
-		<servlet-name>appServlet</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-		
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-    ```
+    web.xml을 보면 모든 Request를 DispatcherServelt이 받도록 처리.    
 
     2. HandlerMapping은 Request의 처리를 담당하는 컨트롤러를 찾기 위해서 존재.
     RequestMappingHandlerMapping 객체는 @RequestMapping 어노테이션이 적용된 것을 기준으로 판단. HandlerAdapter를 이용해서 해당 컨트롤러를 동작.
@@ -52,15 +36,44 @@ tags: Java
 
     4. ViewResolver는 controller가 반환한 결과를 어떤 View를 통해서 처리하는 것이 좋을지 해석하는 역할. 가장 흔하게 사용하는 설정은 servlet-context.xml에 정의된 InternalResourceViewResolver임.
 
-    ```java
-	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<beans:property name="prefix" value="/WEB-INF/views/" />
-		<beans:property name="suffix" value=".jsp" />
-	</beans:bean>
-    ```
 
+web.xml 의 DispatcherServelt
+
+```xml
+<!-- Processes application requests -->
+<servlet>
+	<servlet-name>appServlet</servlet-name>
+	<servlet-class>org.springframework.web.servlet.DispatcherServlet<servlet-class>
+	<init-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring/appServlet/servlet-context.xml<param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>appServlet</servlet-name>
+	<url-pattern>/</url-pattern>
+</servlet-mapping>
+
+```
+</div>
+
+servlet-context.xml에 정의된 InternalResourceViewResolver
+
+```xml
+<!-- Resolves views selected for rendering by @Controllers to .jspresources in the /WEB-INF/views directory -->
+<beans:beanclass="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<beans:property name="prefix" value="/WEB-INF/views/" />
+	<beans:property name="suffix" value=".jsp" />
+</beans:bean>
+```
+<br/>
     5. View는 실제로 응답 보내야 하는 데이터를 Jsp등을 이용해서 생성하는 역할.
     만들어진 응답은 DispatcherServlet을 통해서 전송.
+
+<br/>
+<br/>
 <h1 style="margin:0px;"> 참고자료 </h1>
 <hr style="height:1px; margin:0px;">
 
