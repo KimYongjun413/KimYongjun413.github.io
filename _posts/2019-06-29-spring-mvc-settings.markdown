@@ -6,24 +6,33 @@ author: Kim Yongjun
 categories: Java
 tags: Java
 ---
-# 스프링 MVC의 기본 구조
+
+<h1 style="margin:0px;"> 스프링 MVC의 기본 구조 </h1>
+<hr style="height:1px; margin:0px;">
 
 - 스프링 MVC는 스프링의 서브(sub) 프로젝트
     - '별도의 설정이 존재할 수 있다'라는 개념
 
-## 스프링 MVC 프로젝트의 내부 구조
+
+<h2 style="margin:0px;"> 스프링 MVC 프로젝트의 내부 구조 </h2>
+<hr style="height:1px; margin:0px;">
+
 1. root-context.xml로 사용하는 일반 Java 영역(흔히 POJO(Plain Old Java Object))
 2. servelt-context.xml로 설정하는 Web 관련 영역
 
 - 스프링은 원래 목적 자체가 웹 애플리케이션을 목적으로 나온 프레임워크가 아니기 때문에
 달라지는 영역에 대해서는 완전히 분리하고 연동하는 방식으로 구현
 
-## 스프링 MVC의 기본 사상
+<h2 style="margin:0px;"> 스프링 MVC의 기본 사상 </h2>
+<hr style="height:1px; margin:0px;">
+
 - 개발자는 Servlet/JSP의 API에 신경쓰지 않고 웹 애플리케이션을 제작
 - Spring MVC는 내부적으로 Servlet/JSP 처리
 - 스프링 2.5버전 부터 등장한 어노테이션 방식으로 인해 최근 개발에는 어노테이션이나 XML 등의 설정만으로 개발이 가능하게 됨
 
-## 모델2와 스프링 MVC
+<h2 style="margin:0px;"> 모델2와 스프링 MVC </h2>
+<hr style="height:1px; margin:0px;">
+
 - 모델 2방식 : '로직과 화면을 분리'하는 스타일의 개발 방식
 - 스프링 MVC의 기본 구조
     1. 사용자의 Request는 Front-Controller인 DispatcherServlet을 통해서 처리.
@@ -36,6 +45,8 @@ tags: Java
 
     4. ViewResolver는 controller가 반환한 결과를 어떤 View를 통해서 처리하는 것이 좋을지 해석하는 역할. 가장 흔하게 사용하는 설정은 servlet-context.xml에 정의된 InternalResourceViewResolver임.
 
+	5. View는 실제로 응답 보내야 하는 데이터를 Jsp등을 이용해서 생성하는 역할.
+    만들어진 응답은 DispatcherServlet을 통해서 전송.
 
 web.xml 의 DispatcherServelt
 
@@ -57,7 +68,7 @@ web.xml 의 DispatcherServelt
 </servlet-mapping>
 
 ```
-</div>
+
 
 servlet-context.xml에 정의된 InternalResourceViewResolver
 
@@ -68,12 +79,8 @@ servlet-context.xml에 정의된 InternalResourceViewResolver
 	<beans:property name="suffix" value=".jsp" />
 </beans:bean>
 ```
-<br/>
-    5. View는 실제로 응답 보내야 하는 데이터를 Jsp등을 이용해서 생성하는 역할.
-    만들어진 응답은 DispatcherServlet을 통해서 전송.
-
-<br/>
-<br/>
+<br>
+<br>
 <h1 style="margin:0px;"> 참고자료 </h1>
 <hr style="height:1px; margin:0px;">
 
