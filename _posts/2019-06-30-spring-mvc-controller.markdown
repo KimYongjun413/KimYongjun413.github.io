@@ -6,7 +6,9 @@ author: Kim Yongjun
 categories: Java
 tags: Java
 ---
-# 스프링 MVC의 Controller
+
+<h1 style="margin:0px;"> 스프링 MVC의 Controller </h1>
+<hr style="height:1px; margin:0px;">
 
 - 특징
 	1. HttpServeltRequest, HttpServeltResponse를 거의 사용할 필요 없이 필요한 기능 구현
@@ -14,22 +16,31 @@ tags: Java
 	3. GET 방식, POST 방식 등 전송 방식에 대한 처리를 어노테이션으로 처리 가능
 	4. 상속/인터페이스 방식 대신에 어노테이션만으로도 필요한 설정 가능
 
-## @Controller, @RequestMapping
+<h2 style="margin:0px;"> @Controller, @RequestMapping </h2>
+<hr style="height:1px; margin:0px;">
+
 - 클래스 선언부에 @Controller : 자동으로 스프링의 객체(Bean)로 등록
 	- servlet-context.xml에 그 이유가 있다.
-	```xml 
-	<context:component-scan base-package="org.zerock.controller" /> 
-	```
+	
 - 클래스 선언부에 @RequestMapping : 현재 클래스의 모든 메서드들의 기본적인 URL 경로가 됨.
 	- 메서드 선언에도 사용할 수 있다.
 
-## @RequestMapping의 변화
+servlet-context.xml
+```xml 
+<context:component-scan base-package="org.zerock.controller" /> 
+```
+
+<h2 style="margin:0px;"> @RequestMapping의 변화 </h2>
+<hr style="height:1px; margin:0px;">
+
 - 몇 가지의 속성을 추가할 수 있다.
 	- method 속성 : GET 방식, POST 방식을 구분해서 사용
 - 스프링 4.3버전부터는 @GetMapping, @PostMapping 등장
 - 일반적인 경우에는 GET,POST 방식만 사용하지만 최근에는 PUT, DELETE 방식 등도 점점 많이 사용.
 
-## Controller의 파라미터 수집
+<h2 style="margin:0px;"> Controller의 파라미터 수집 </h2>
+<hr style="height:1px; margin:0px;">
+
 - Lombok의 @Data 어노테이션을 이용
 - @Data를 이용하게 되면 getter/setter, equals(), toString() 등의 메서드를 자동 생성
 - Controller의 메서드가 클래스를 파라미터로 사용하게 되면 자동으로 setter 메서드가 동작하면서 파라미터를 수집.
@@ -64,7 +75,9 @@ dueDate= Mon Jan 01 00:00:00 KST 2018
 private Date dueDate;
 ```
 
-## Model이라는 데이터 전달자
+<h2 style="margin:0px;"> Model이라는 데이터 전달자 </h2>
+<hr style="height:1px; margin:0px;">
+
 - Controller의 메서드를 작성할 때는 특별하게 Model이라는 타입을파라미터로 지정할 수 있다.
 - 뷰(View)로 전달해야 하는 데이터를 담아서 보낼 수 있다.
 - Model을 사용해야 하는 경우는 주로 Controller에 전달된 데이터를 이용해서 추가적인 데이터를 가져와야 하는 상황
@@ -86,7 +99,9 @@ rttr.addFlashAttribute("age",10);
 return "redirect:/";
 ```
 
-## Controller의 리턴 타입
+<h2 style="margin:0px;"> Controller의 리턴 타입 </h2>
+<hr style="height:1px; margin:0px;">
+
 스프링 MVC의 구조가 기존의 상속과 인터페이스에서 어노테이션을 사용하는 방식으로 변한 이후에 가장 큰 변화 중 하나는 리턴 타입이 자유로워 졌다는 점이다.
 
 Controller의 메서드가 사용할 수 있는 리턴 타입은 주로 다음과 같다.
@@ -127,7 +142,8 @@ public ResponseEntity<String> ex07() {
 }
 ```
 
-## Controller의 Exception 처리
+<h2 style="margin:0px;"> Controller의 Exception 처리 </h2>
+<hr style="height:1px; margin:0px;">
 
 ### @ControllerAdvice
 - AOP(Aspect-Oriented-Programming)를 이용하는 방식
