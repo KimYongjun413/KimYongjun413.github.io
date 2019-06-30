@@ -28,7 +28,7 @@ tags: Java
 - 스프링 MVC의 기본 구조
     1. 사용자의 Request는 Front-Controller인 DispatcherServlet을 통해서 처리.
     web.xml을 보면 모든 Request를 DispatcherServelt이 받도록 처리.
-    ```xml
+    ```java
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -52,7 +52,7 @@ tags: Java
 
     4. ViewResolver는 controller가 반환한 결과를 어떤 View를 통해서 처리하는 것이 좋을지 해석하는 역할. 가장 흔하게 사용하는 설정은 servlet-context.xml에 정의된 InternalResourceViewResolver임.
 
-    ```xml
+    ```java
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />

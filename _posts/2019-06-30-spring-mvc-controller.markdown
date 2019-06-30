@@ -166,7 +166,7 @@ public class CommonExceptionAdvice {
 잘못된 URL을 호출할 때 보이는 404 에러 메시지의 경우는 조금 다르게 처리하는 것이 좋다.
 
 스프링 MVC의 모든 요청은 DispatcherServlet을 이용해서 처리되므로 404 에러도 같이 처리할 수 있도록 web.xml을 수정한다.
-```xml
+```java
 <!-- Processes application requests -->
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
